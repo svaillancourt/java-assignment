@@ -23,4 +23,14 @@ form.addEventListener( 'submit' , function ( event ) {
     `;
 
     var newCheckbox = document.querySelector(' ul li:last-child [type="checkbox"] ')        // normal, child, attritube selector.
+
+    newCheckbox.addEventListener ('click', function (event){
+        // grabs the associated LI.
+        var li = this.parentNode;
+        // Delete the checkbox
+        li.removeChild( this );
+
+        // move the Li to our completed UL.
+        completeList.appendChild(li);
+    });
 });
