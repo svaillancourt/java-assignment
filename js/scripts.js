@@ -33,7 +33,7 @@ myForm.addEventListener( 'submit', function ( event ) {
     var taskValue        = taskField.value;
       
     // Create new element (table row.)
-    var newRow = document.createElement( 'TR' );
+    var newRow = document.createElement( 'TD' );
 
     // Create new cell for the row (table data.)
     var taskCell = document.createElement( 'LI' );
