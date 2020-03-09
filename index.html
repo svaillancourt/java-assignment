@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Table Exercise
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS stylesheet: -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Script(s): -->
+    <script type="text/javascript" src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <h1>Javascript To-Do List</h1>
+
+    <h2>Add to To-Dos</h2>
+
+    <form id="table-form" action="#" method="GET">
+        <h4>Enter Task:</h4>
+        <label for="task">
+            <input type="text" id="myInput" placeholder="enter here...">
+        </label>
+        <button class="styleButton" type="submit">
+            <h3>Add To-Do</h3>
+        </button>
+    </form>
+
+    <table>
+        <!-- Open your table... -->
+        <thead>
+            <!-- Open the table head... -->
+            <tr>
+                <!-- Start a row... -->
+                <h2>Task Name</h2>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Table body contains your data! -->
+            <tr>
+                <!-- Each row requires a "tr". -->
+                <td>
+                    <li><input type="checkbox"> Take out the trash </li>
+                </td>
+                <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <li><input type="checkbox"> Make lesson plan </li>
+                </td>
+                <td><button>Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="my-completed-tasks" action="#" method="GET">
+        <table>
+            <!-- Open your table... -->
+            <thead>
+                <!-- Open the table head... -->
+                <tr>
+                    <!-- Start a row... -->
+                    <br>
+                    <th>
+                        <h2>Completed Tasks</h2>
+                    </th> <!-- Enter a heading per column... -->
+                    <br>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Table body contains your data! -->
+                <tr>
+                    <!-- Each row requires a "tr". -->
+                    <td>
+                        <li><input type="checkbox"> Buy milk </li>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+
+</html>
