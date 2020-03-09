@@ -2,7 +2,7 @@
 var activeList = document.querySelector( 'ul' );
 
 // retrieve "Completed" list.
-var completeList = document.querySelector( 'ul:last-of-type' );
+var completeList = document.querySelectorAll( 'ul li:last-of-type' );
 
 // Retrieve the to-do input.
 var newTask = document.querySelector('[name="new-task"]');
